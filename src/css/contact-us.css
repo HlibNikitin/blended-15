@@ -1,6 +1,6 @@
 .contact-us {
   padding-top: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 .contact-us .container {
@@ -98,7 +98,7 @@ textarea {
 @media only screen and (min-width: 768px) {
   .contact-us {
     padding-top: 40px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
   .contact-us .container {
     max-width: 768px;
@@ -141,7 +141,7 @@ textarea {
 @media only screen and (min-width: 1280px) {
   .contact-us {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 
   .contact-us .container {

@@ -5,8 +5,8 @@
 }
 
 @font-face {
-  font-family: 'Gilroy', sans-serif;
-  src: url(../../fonts/Gilroy-Medium/Gilroy-Regular/Gilroy-Semibold/Gilroy-Bold.ttf);
+  font-family: 'Gilroy';
+  src: url('../../fonts/Gilroy-Medium/Gilroy-Regular/Gilroy-Semibold/Gilroy-Bold.ttf');
   font-style: normal;
   font-weight: 500;
 }

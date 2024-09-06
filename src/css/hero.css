@@ -13,7 +13,18 @@
 .main-text-span {
   color: #3350e9;
 }
-.idk {
+.text-container {
+  max-width: 335px;
+}
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
+  margin-bottom: 28px;
+}
+.photo-scroll {
   margin-bottom: 28px;
 }
 .photo-container {

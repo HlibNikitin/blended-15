@@ -1,3 +1,4 @@
+/* #region Mobile Styles */
 .footer {
   padding: 30px 20px 20px;
   color: #fbfbfb;
@@ -35,12 +36,18 @@ a {
   height: 34px;
 }
 
-.social-icon {
+.social-li:hover .social-icon,
+.social-li:focus .social-icon {
   fill: #fbfbfb;
+}
+
+.social-icon {
+  fill: #f3f3f3;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: fill 300ms ease-in-out;
 }
 
 .footer-contact {
@@ -52,6 +59,13 @@ a {
   width: 152px;
   height: 44px;
   margin-bottom: 40px;
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.footer-contact:hover,
+.footer-contact:hover {
+  background-color: #fbfbfb;
+  color: #0c0c0c;
 }
 
 .footer-tel {
@@ -127,3 +141,103 @@ a {
   letter-spacing: -0.02em;
   color: rgba(251, 251, 251, 0.5);
 }
+/* #endregion Mobile Styles */
+
+/* #region Tablet Styles */
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 40px 32px 32px;
+  }
+
+  .footer.container {
+    padding: 40px 40px 28px 40px;
+    max-width: 704px;
+  }
+
+  .footer-logo {
+    font-size: 20px;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 86px;
+  }
+
+  .social-list {
+    margin-bottom: 0;
+  }
+
+  .social-li {
+    width: 36px;
+    height: 36px;
+  }
+
+  .social-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer-contact {
+    width: 160px;
+    height: 48px;
+    margin-bottom: 0;
+  }
+
+  .footer-tel {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .footer-info {
+    font-size: 28px;
+    line-height: 1.14;
+    display: block;
+    width: 524px;
+    margin: 0 auto 100px;
+  }
+
+  .footer-nav-adr {
+    margin-top: 0;
+    margin-bottom: 56px;
+  }
+
+  .footer-nav-adr::after {
+    top: 64px;
+  }
+
+  .footer-nav {
+    width: 100%;
+    column-gap: 19px;
+    row-gap: 0;
+  }
+
+  .nav-item {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .adr-item {
+    font-size: 14px;
+    line-height: 1.29;
+    width: 162px;
+  }
+
+  .copyright {
+    font-size: 14px;
+    line-height: 1.29;
+    margin-bottom: 0;
+  }
+
+  .copyright-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .copyright-list {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+/* #endregion Tablet Styles */

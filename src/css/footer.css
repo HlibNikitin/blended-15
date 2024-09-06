@@ -241,3 +241,49 @@ a {
   }
 }
 /* #endregion Tablet Styles */
+
+/* #region Desktop Styles */
+@media only screen and (min-width: 1280px) {
+  .footer {
+    padding: 50px 32px 32px;
+  }
+
+  .footer.container {
+    max-width: 1150px;
+    position: relative;
+  }
+
+  .footer-links {
+    margin-bottom: 142px;
+  }
+
+  .footer-info {
+    width: 523px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+
+  .footer-nav {
+    column-gap: 40px;
+  }
+
+  .nav-item {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .copyright {
+    font-size: 14px;
+    line-height: 1.29;
+    margin-bottom: 0;
+  }
+
+  .copyright-box {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/* #endregion Desktop Styles */

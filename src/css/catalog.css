@@ -1,0 +1,115 @@
+.catalog {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0px 65px;
+    width: 1280px;
+    height: 944px;
+
+}
+
+.container-all {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0px 65px;
+    width: 1280px;
+    height: 944px;
+
+}
+
+.title-catalog {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+
+    /* line-height: 44px; */
+    line-height: 0.91667;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+}
+
+.catalog-list {
+    width: 1150px;
+    height: 860px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 23px;
+}
+
+.catalog-main-list {
+    border: 1px solid rgba(12, 12, 12, 0.05);
+    border-radius: 30px;
+    width: 368px;
+    height: 414px;
+    background: #f3f3f3;
+}
+
+.container-clock {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.contaiter-foto {
+    width: 304px;
+    height: 312px;
+    margin: auto;
+}
+
+.foto-clock {
+    width: 292px;
+    height: 292px;
+    mix-blend-mode: multiply;
+    margin: auto;
+
+}
+
+.info-clock {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    width: 304px;
+    height: 44px;
+    margin: auto;
+
+}
+
+.name-clocks {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+
+}
+
+.text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: block;
+}
+
+.price-clock {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    color: rgba(12, 12, 12, 0.5);
+    margin: 0;
+}

@@ -159,6 +159,7 @@
   text-overflow: ellipsis;
   max-width: 100%;
   display: block;
+  overflow: hidden;
 }
 
 .name-clocks {
@@ -206,6 +207,7 @@
   text-overflow: ellipsis;
   max-width: 100%;
   display: block;
+  overflow: hidden;
 }
 
 .name-clocks {

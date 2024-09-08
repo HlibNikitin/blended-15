@@ -38,8 +38,10 @@
   border-radius: 30px;
   width: 335px;
   height: 364px;
+    width: 335px;
+    height: 364px;
   background: #f3f3f3;
-  padding: 60 px 0;
+  padding: 60px 0;
 }
 
 .container-clock {
@@ -55,9 +57,8 @@
   width: 208px;
   height: 226px;
   margin: auto;
-  padding: 18 px 36px;
+  padding: 18px 36px;
 }
-
 .foto-clock {
   width: 292px;
   mix-blend-mode: multiply;
@@ -82,7 +83,6 @@
   color: #0c0c0c;
   margin-bottom: 8px;
 }
-
 .text-catalog {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -124,3 +124,4 @@
   height: 48px;
   margin: 40px 88px;
 }
+

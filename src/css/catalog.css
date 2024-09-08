@@ -41,7 +41,11 @@
     width: 335px;
     height: 364px;
   background: #f3f3f3;
+<<<<<<< HEAD
+ 
+=======
   padding: 60px 0;
+>>>>>>> b83b536a97d0025ec71fd1983fc3dfd4c4d002c7
 }
 
 .container-clock {
@@ -54,7 +58,7 @@
 }
 
 .contaiter-foto {
-  width: 208px;
+  
   height: 226px;
   margin: auto;
   padding: 18px 36px;
@@ -125,3 +129,104 @@
   margin: 40px 88px;
 }
 
+<<<<<<< HEAD
+@media only screen and (min-width: 768px) {
+.catalog-list .catalog-main-list-second {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 23px;
+  }
+    .contaiter-foto {
+      
+      height: 226px;
+      margin: auto;
+      padding: 18px 36px;
+    }
+
+
+.catalog-btn{
+  display: none;
+}
+
+.catalog-main-list-second{
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 30px;
+  width: 335px;
+  height: 364px;
+  background: #f3f3f3;
+  padding: 60 px 0;
+}
+
+.text-catalog {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: block;
+}
+
+.name-clocks {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 8px;
+}
+
+}
+
+@media only screen and (min-width: 1280px){
+.catalog-list .catalog-main-list-second {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 23px;
+  }
+
+    .catalog-btn {
+      display: none;
+    }
+
+        .contaiter-foto {
+          
+          height: 226px;
+          margin: auto;
+          padding: 18px 36px;
+        }
+
+.catalog-main-list-second {
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 30px;
+  width: 335px;
+  height: 364px;
+  background: #f3f3f3;
+  padding: 60 px 0;
+}
+.text-catalog {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: block;
+}
+
+.name-clocks {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 8px;
+}
+
+
+
+}
+=======
+>>>>>>> b83b536a97d0025ec71fd1983fc3dfd4c4d002c7

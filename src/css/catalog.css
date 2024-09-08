@@ -41,11 +41,6 @@
     width: 335px;
     height: 364px;
   background: #f3f3f3;
-<<<<<<< HEAD
- 
-=======
-  padding: 60px 0;
->>>>>>> b83b536a97d0025ec71fd1983fc3dfd4c4d002c7
 }
 
 .container-clock {
@@ -129,7 +124,7 @@
   margin: 40px 88px;
 }
 
-<<<<<<< HEAD
+
 @media only screen and (min-width: 768px) {
 .catalog-list .catalog-main-list-second {
     display: flex;
@@ -157,7 +152,6 @@
   width: 335px;
   height: 364px;
   background: #f3f3f3;
-  padding: 60 px 0;
 }
 
 .text-catalog {
@@ -206,7 +200,6 @@
   width: 335px;
   height: 364px;
   background: #f3f3f3;
-  padding: 60 px 0;
 }
 .text-catalog {
   white-space: nowrap;
@@ -228,5 +221,5 @@
 
 
 }
-=======
->>>>>>> b83b536a97d0025ec71fd1983fc3dfd4c4d002c7
+
+

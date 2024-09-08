@@ -12,7 +12,6 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 40px;
 }
 
 .title-catalog {
@@ -22,11 +21,10 @@
   line-height: 0.91667;
   letter-spacing: -0.02em;
   color: #0c0c0c;
+  padding: 24px 0;
 }
 
 .catalog-list {
-  width: 1150px;
-  height: 860px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -38,9 +36,10 @@
 .catalog-main-list {
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
-  width: 368px;
-  height: 414px;
+  width: 335px;
+  height: 364px;
   background: #f3f3f3;
+  padding: 60 px 0;
 }
 
 .container-clock {
@@ -49,13 +48,14 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 10px;
-  padding: 24px 0;
+  padding: 24px 28px;
 }
 
 .contaiter-foto {
-  width: 304px;
-  height: 312px;
+  width: 208px;
+  height: 226px;
   margin: auto;
+  padding: 18 px 36px;
 }
 
 .foto-clock {
@@ -69,22 +69,21 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  width: 304px;
-  margin: auto;
+  width: 279px;
+  padding: 24px 0;
 }
 
 .name-clocks {
-  font-family: 'Gilroy', sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1;
+  font-size: 16px;
+  line-height: 1.25;
   letter-spacing: -0.02em;
   color: #0c0c0c;
   margin-bottom: 8px;
 }
 
 .text-catalog {
-  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 100%;
@@ -92,11 +91,36 @@
 }
 
 .price-clock {
-  font-family: 'Gilroy', sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.28571;
   letter-spacing: -0.02em;
   color: rgba(12, 12, 12, 0.5);
   margin: 0;
+}
+
+.catalog-main-list-second {
+  display: none;
+}
+.catalog-btn:hover,
+.catalog-btn:focus {
+  background: #1f3cd4;
+}
+
+.catalog-btn {
+  display: block;
+  border-radius: 16px;
+  padding: 15px 44px;
+  background: #3350e9;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  color: #fbfbfb;
+  border: none;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 160px;
+  height: 48px;
+  margin: 40px 88px;
 }

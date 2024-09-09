@@ -1,1 +1,222 @@
+/* Стили для мобильных устройств (ширина до 767px) */
+@media (max-width: 767px) {
+    .container-sale {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-panel, .right-panel {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .main-image-container {
+        margin: auto;
+        width: 90%;
+    }
+
+    .main-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .thumbnails {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    .thumbnails img {
+        width: 50px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .right-panel {
+        padding: 15px 10px;
+        text-align: center;
+        background-color: #f7f7f7;
+        color: #000; /* Изменение цвета для лучшей читаемости */
+    }
+
+    .right-panel h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .price {
+        font-size: 1.2em;
+        margin: 5px 0;
+    }
+
+    .description {
+        font-size: 0.9em;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .tags span {
+        font-size: 10px;
+        padding: 3px 8px;
+        background-color: #555;
+        border-radius: 12px;
+        color: #fff;
+    }
+}
+
+/* Стили для планшета (ширина от 768px до 1279px) */
+@media (min-width: 768px) and (max-width: 1279px) {
+    .container-sale {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .left-panel, .right-panel {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .main-image-container {
+        width: 100%;
+    }
+
+    .main-image {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .thumbnails {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .thumbnails img {
+        width: 60px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .right-panel {
+        padding: 15px;
+        text-align: center;
+        background-color: #3350E9;
+        color: #fff;
+    }
+
+    .right-panel h2 {
+        font-size: 1.7em;
+    }
+
+    .price {
+        font-size: 1.7em;
+    }
+}
+
+/* Стили для десктопа (ширина от 1280px и выше) */
+@media (min-width: 1280px) {
+    .container-sale {
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+        max-width: 1200px;
+        margin: auto;
+        background-color: #FBFBFB;
+    }
+
+    .left-panel {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-image {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .thumbnails {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .thumbnails img {
+        width: 100%;
+        cursor: pointer;
+        border: 2px solid transparent;
+        border-radius: 5px;
+    }
+
+    .thumbnails img:hover {
+        border-color: #3350E9;
+    }
+
+    .right-panel {
+        width: 70%;
+        background-color: #3350E9;
+        color: #fff;
+        padding: 20px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .right-panel h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .product-tag {
+        font-size: 1em;
+        color: #ccc;
+        margin-bottom: 10px;
+    }
+
+    .price {
+        font-size: 2em;
+        margin: 10px 0;
+    }
+
+    .description {
+        margin: 20px 0;
+        line-height: 1.6;
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .tags span {
+        background-color: #444;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+        color: #fff;
+    }
+}
 

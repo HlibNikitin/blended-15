@@ -4,7 +4,6 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 40px;
-  padding: 100px 0;
 }
 
 .container-all {
@@ -21,7 +20,7 @@
   line-height: 0.91667;
   letter-spacing: -0.02em;
   color: #0c0c0c;
-  padding: 24px 0;
+  margin-bottom: 24px;
 }
 
 .catalog-list {
@@ -30,17 +29,14 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
-  gap: 23px;
+  gap: 20px;
 }
 
 .catalog-main-list {
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
-  width: 335px;
-  height: 364px;
-    width: 335px;
-    height: 364px;
   background: #f3f3f3;
+  flex-basis: calc((100% - 0 * 20px) / 1);
 }
 
 .container-clock {
@@ -68,11 +64,10 @@
   justify-content: flex-start;
   flex-direction: column;
   width: 279px;
-  padding: 24px 0;
 }
 
 .name-clocks {
-  font-family: "Gilroy", sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
@@ -88,7 +83,7 @@
 }
 
 .price-clock {
-  font-family: "Gilroy", sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28571;
@@ -109,129 +104,130 @@
   display: block;
   border-radius: 16px;
   padding: 15px 44px;
-  background: #3350e9;
+  background-color: #3350e9;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28;
   text-align: center;
   color: #fbfbfb;
   border: none;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 160px;
   height: 48px;
   margin: 40px 88px;
 }
 
-
 @media only screen and (min-width: 768px) {
-.catalog-list .catalog-main-list-second {
+  .catalog-list,
+  .catalog-main-list-second {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 16px;
+    row-gap: 32px;
+  }
+
+  .container-clock {
+    display: flex;
+  }
+
+  .title-catalog {
+    margin-bottom: 40px;
+  }
+
+  .catalog-main-list,
+  .catalog-main-list-second {
+    flex-basis: calc((100% - 1 * 16px) / 2);
+  }
+
+  .contaiter-foto {
+    height: auto;
+    margin: auto;
+    padding: 0;
+  }
+
+  .foto-clock {
+    width: 280px;
+    mix-blend-mode: multiply;
+    margin: auto;
+  }
+
+  .catalog-btn {
+    display: none;
+  }
+
+  .catalog-main-list-second {
+    border: 1px solid rgba(12, 12, 12, 0.05);
+    border-radius: 30px;
+    background: #f3f3f3;
+  }
+
+  .text-catalog {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+
+  .name-clocks {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+    margin-bottom: 8px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .catalog-list {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
     gap: 23px;
+    row-gap: 32px;
   }
-   
-.contaiter-foto {
- height: 226px;
- margin: auto;
-padding: 18px 36px;
+
+  .catalog-btn {
+    display: none;
+  }
+
+  .contaiter-foto {
+    height: auto;
+    margin: auto;
+    padding: 0;
+  }
+
+  .catalog-main-list {
+    flex-basis: calc((100% - 2 * 23px) / 3);
+  }
+
+  .catalog-main-list-second {
+    border: 1px solid rgba(12, 12, 12, 0.05);
+    border-radius: 30px;
+    background: #f3f3f3;
+    flex-basis: calc((100% - 2 * 23px) / 3);
+  }
+  .text-catalog {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+
+  .container-clock {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px 32px;
+  }
 }
-
- .foto-clock {
-  width: 280px;
-   mix-blend-mode: multiply;
-   margin: auto;
- }
-
-
-.catalog-btn{
-  display: none;
-}
-
-.catalog-main-list-second{
-  border: 1px solid rgba(12, 12, 12, 0.05);
-  border-radius: 30px;
-  width: 335px;
-  height: 364px;
-  background: #f3f3f3;
-}
-
-.text-catalog {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 100%;
-  display: block;
-  overflow: hidden;
-}
-
-.name-clocks {
-  font-family: "Gilroy", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-  color: #0c0c0c;
-  margin-bottom: 8px;
-}
-
-}
-
-@media only screen and (min-width: 1280px){
-.catalog-list .catalog-main-list-second {
- display: flex;
- flex-wrap: wrap;
- align-items: flex-start;
- justify-content: flex-start;
- flex-direction: row;
- gap: 23px;
- }
-
-.catalog-btn {
-display: none;
- }
-
-.contaiter-foto {    
- margin: auto;
- padding: 18px 36px;
- width: 304px;
- }
-
-.catalog-main-list-second {
-  border: 1px solid rgba(12, 12, 12, 0.05);
-  border-radius: 30px;
-  width: 335px;
-  height: 364px;
-  background: #f3f3f3;
-}
-.text-catalog {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 100%;
-  display: block;
-  overflow: hidden;
-}
-
-.name-clocks {
-  font-family: "Gilroy", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-  color: #0c0c0c;
-  margin-bottom: 8px;
-}
-.container-clock {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 10px;
-  padding: 24px 32px;
-}
-
-
-}
-
-

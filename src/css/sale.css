@@ -1,268 +1,282 @@
-/* Стили для мобильных устройств (ширина до 767px) */
-@media (max-width: 767px) {
-    .container-sale {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .sale-30 {
-        flex-shrink: 0;
-        flex-basis: auto;
-        position: relative;
-        height: 44px;
-        color: #0b0b0b;
-        font-family: Gilroy, var(--default-font-family);
-        font-size: 48px;
-        font-weight: 600;
-        line-height: 44px;
-        text-align: left;
-        white-space: nowrap;
-        letter-spacing: -0.96px;
-        z-index: 80;
-      }
-
-    .left-panel, .right-panel {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .main-image-container {
-        margin: auto;
-        width: 90%;
-    }
-
-    .main-image {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
-
-    .thumbnails {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 5px;
-        margin-top: 10px;
-    }
-
-    .thumbnails img {
-        width: 50px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-    }
-
-    .right-panel {
-        padding: 15px 10px;
-        text-align: center;
-        background-color: #3350E9;
-        color: #ffffff;
-    }
-
-    .right-panel h2 {
-        font-size: 1.2em;
-        margin-bottom: 10px;
-    }
-
-    .price {
-        font-size: 1.2em;
-        margin: 5px 0;
-    }
-
-    .description {
-        font-size: 0.9em;
-        line-height: 1.4;
-        margin-bottom: 10px;
-    }
-
-    .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
-        justify-content: center;
-    }
-
-    .tags span {
-        font-size: 10px;
-        padding: 3px 8px;
-        background-color: #555;
-        border-radius: 12px;
-        color: #fff;
-    }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* Стили для планшета (ширина от 768px до 1279px) */
-@media (min-width: 768px) and (max-width: 1279px) {
-    .container-sale {
-        flex-direction: column;
-        padding: 15px;
-    }
-
-    .sale-30 {
-        flex-shrink: 0;
-        flex-basis: auto;
-        position: relative;
-        height: 44px;
-        color: #0b0b0b;
-        font-family: Gilroy, var(--default-font-family);
-        font-size: 48px;
-        font-weight: 600;
-        line-height: 44px;
-        text-align: left;
-        white-space: nowrap;
-        letter-spacing: -0.96px;
-        z-index: 80;
-      }
-
-    .left-panel, .right-panel {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .main-image-container {
-        width: 100%;
-    }
-
-    .main-image {
-        width: 100%;
-        border-radius: 10px;
-    }
-
-    .thumbnails {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .thumbnails img {
-        width: 60px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-    }
-
-    .right-panel {
-        padding: 15px;
-        text-align: center;
-        background-color: #3350E9;
-        color: #fff;
-    }
-
-    .right-panel h2 {
-        font-size: 1.7em;
-    }
-
-    .price {
-        font-size: 1.7em;
-    }
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../../fonts/Gilroy-Medium/Gilroy-Regular/Gilroy-Semibold/Gilroy-Bold.ttf');
+  font-style: normal;
+  font-weight: 500;
 }
 
-/* Стили для десктопа (ширина от 1280px и выше) */
-@media (min-width: 1280px) {
-    .container-sale {
-        display: flex;
-        padding: 20px;
-        gap: 20px;
-        max-width: 1200px;
-        margin: auto;
-        background-color: #FBFBFB;
-    }
-    .sale-30 {
-        flex-shrink: 0;
-        flex-basis: auto;
-        position: relative;
-        height: 44px;
-        color: #0b0b0b;
-        font-family: Gilroy, var(--default-font-family);
-        font-size: 48px;
-        font-weight: 600;
-        line-height: 44px;
-        text-align: left;
-        white-space: nowrap;
-        letter-spacing: -0.96px;
-        z-index: 80;
-      }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-    .left-panel {
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+a {
+  text-decoration: none;
+}
 
-    .main-image-container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
-    .main-image {
-        width: 100%;
-        border-radius: 10px;
-    }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
-    .thumbnails {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
+button {
+  cursor: pointer;
+}
 
-    .thumbnails img {
-        width: 100%;
-        cursor: pointer;
-        border: 2px solid transparent;
-        border-radius: 5px;
-    }
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fbfbfb;
+}
 
-    .thumbnails img:hover {
-        border-color: #3350E9;
-    }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
-    .right-panel {
-        width: 70%;
-        background-color: #3350E9;
-        color: #fff;
-        padding: 20px;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+/* Styles for Mobile devices */
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 704px;
+    padding: 0 32px;
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1150px;
+    padding: 0 65px;
+  }
+}
 
-    .right-panel h2 {
-        font-size: 2em;
-        margin-bottom: 10px;
-    }
+/* Mobile */
 
-    .product-tag {
-        font-size: 1em;
-        color: #ccc;
-        margin-bottom: 10px;
-    }
+.sale-cont {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 24px;
+}
 
-    .price {
-        font-size: 2em;
-        margin: 10px 0;
-    }
+.main-image-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 5px;
+  margin-bottom: 20px;
+}
 
-    .description {
-        margin: 20px 0;
-        line-height: 1.6;
-    }
+.main-image-list-item {
+  flex-basis: calc((100% - 3 * 5px) / 4);
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 16px;
+  background: #f3f3f3;
+}
 
-    .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
+.main-image-list-photo {
+  display: block;
+  margin: 0 auto;
+  mix-blend-mode: multiply;
+  padding: 13px 14px;
+}
 
-    .tags span {
-        background-color: #444;
-        padding: 5px 10px;
-        border-radius: 20px;
-        font-size: 12px;
-        color: #fff;
-    }
+.main-image-container {
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 30px;
+  width: 335px;
+  height: 385px;
+  margin-bottom: 20px;
+  background: #f3f3f3;
+}
+
+.main-image {
+  display: block;
+  margin: 0 auto;
+  padding: 50px;
+  mix-blend-mode: multiply;
+}
+
+.right-panel {
+  border-radius: 30px;
+  width: 335px;
+  height: 561px;
+  background: #3350e9;
+  padding: 48px 28px;
+}
+
+.right-panel-title {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-bottom: 10px;
+}
+
+.product-tag {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.5);
+  margin-bottom: 20px;
+}
+
+.price {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.price-span {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-right: 9px;
+  border-radius: 8px;
+  background: rgba(251, 251, 251, 0.1);
+  padding: 8px 12px;
+}
+
+.price-del {
+  display: flex;
+  align-items: center;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.description {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.7);
+  max-width: 279px;
+  margin-bottom: 28px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 8px;
+  width: 279px;
+}
+
+.tags-span {
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33333;
+  color: #fbfbfb;
+}
+
+@media only screen and (min-width: 768px) {
+  .sale-cont {
+    font-size: 48px;
+    line-height: 0.91;
+    margin-bottom: 40px;
+  }
+
+  .thumbnails {
+    display: flex;
+  }
+
+  .main-image-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+  }
+
+  .main-image-list-item {
+    display: flex;
+  }
+
+  .left-panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 40px;
+  }
+
+  .right-panel {
+    border-radius: 50px;
+    width: 704px;
+    height: 518px;
+    padding: 60px;
+  }
+
+  .right-panel-title {
+    font-size: 32px;
+    line-height: 1.125;
+  }
+
+  .price-span {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 1.25;
+    min-width: 584px;
+    margin-bottom: 40px;
+  }
+
+  .tags {
+    min-width: 390px;
+  }
 }

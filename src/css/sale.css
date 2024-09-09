@@ -1,83 +1,144 @@
-.sale-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FBFBFB;
+    color: #000;
+    margin: 0;
+    padding: 0;
 }
 
-.left-section {
-  flex: 1;
-  padding: 20px;
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #FBFBFB;
 }
 
-.left-section h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
+.left-panel {
+    width: 20%;
 }
 
-.product-gallery {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.left-panel h1 {
+    font-size: 3em;
+    color: #000;
+    margin-bottom: 20px;
 }
 
-.product-gallery img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.product-info {
-  flex: 2;
-  background-color: #2a56c6;
-  color: white;
-  padding: 40px;
-  border-radius: 20px;
+.thumbnails img {
+    width: 100%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
 }
 
-.product-title h2 {
-  font-size: 24px;
+.thumbnails img:hover {
+    border-color: #3350E9;
 }
 
-.product-title p {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.7);
+.main-image-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.right-panel {
+    width: 50%;
+    background-color: #3350E9;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-panel h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.product-tag {
+    font-size: 1em;
+    color: #ccc;
+    margin-bottom: 10px;
 }
 
 .price {
-  margin: 20px 0;
-  font-size: 24px;
-  display: flex;
-  gap: 15px;
-}
-
-.current-price {
-  font-weight: bold;
-}
-
-.old-price {
-  text-decoration: line-through;
-  color: rgba(255, 255, 255, 0.6);
+    font-size: 2em;
+    margin: 10px 0;
 }
 
 .description {
-  font-size: 16px;
-  margin-bottom: 20px;
+    margin: 20px 0;
+    line-height: 1.6;
 }
 
 .tags {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.tags button {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 10px 20px;
-  color: white;
-  border-radius: 20px;
-  cursor: pointer;
+.tags span {
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #fff;
+}
+
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-panel {
+        width: 100%;
+    }
+
+    .thumbnails {
+        flex-direction: row;
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    .main-image-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .right-panel {
+        margin-top: 20px;
+        padding: 20px 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .right-panel h2 {
+        font-size: 1.5em;
+    }
+
+    .price {
+        font-size: 1.5em;
+    }
+
+    .features li {
+        font-size: 0.9em;
+    }
 }

@@ -13,42 +13,100 @@
     </div>
     <div class="photo-scroll">
       <div class="photo-container">
-        <img
-          class="photo1"
-          srcset="./img/blondgirl@1x.jpg 1x, ./img/blondgirl@2x.jpg 2x"
-          src="./img/blondgirl@1x.jpg"
-          alt="Blond Girl"
-          width="44"
-        />
-        <img
-          class="photo2"
-          srcset="
-            ./img/Manwithglasses@1x.jpg 1x,
-            ./img/Manwithglasses@2x.jpg 2x
-          "
-          src="./img/Manwithglasses@1x.jpg"
-          alt="Man with glasses"
-          width="44"
-        />
-        <img
-          class="photo3"
-          srcset="
-            ./img/Girlwithglasses@1x.jpg 1x,
-            ./img/Girlwithglasses@2x.jpg 2x
-          "
-          src="./img/Girlwithglasses@1x.jpg"
-          alt="Girl with glasses"
-          width="44"
-        />
+        <picture class="photo1">
+          <source
+            srcset="
+              ./img/blondgirl-desk@1x.jpg 1x,
+              ./img/blondgirl-desk@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./img/blondgirl-tab@1x.jpg 1x,
+              ./img/blondgirl-tab@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/blondgirl-mob@1x.jpg 1x,
+              ./img/blondgirl-mob@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img src="./img/blondgirl-tab@1x.jpg" alt="blondgirl" />
+        </picture>
+        <picture class="photo2">
+          <source
+            srcset="
+              ./img/Manwithglasses-desk@1x.jpg 1x,
+              ./img/Manwithglasses-desk@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./img/Manwithglasses-tab@1x.jpg 1x,
+              ./img/Manwithglasses-tab@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/Manwithglasses-mob@1x.jpg 1x,
+              ./img/Manwithglasses-mob@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img src="./img/Manwithglasses-tab@1x.jpg" alt="Manwithglasses" />
+        </picture>
+        <picture class="photo3">
+          <source
+            srcset="
+              ./img/Girlwithglasses-desk@1x.jpg 1x,
+              ./img/Girlwithglasses-desk@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./img/Girlwithglasses-tab@1x.jpg 1x,
+              ./img/Girlwithglasses-tab@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/Girlwithglasses-mob@1x.jpg 1x,
+              ./img/Girlwithglasses-mob@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img src="./img/Girlwithglasses-tab@1x.jpg" alt="Girlwithglasses" />
+        </picture>
       </div>
       <a class="scroll" href="Якорь">Scroll down</a>
     </div>
-    <img
-      class="watch"
-      srcset="./img/Rectangle@1x.jpg 1x, ./img/Rectangle@2x.jpg 2x"
-      src="./img/Rectangle@1x.jpg"
-      alt="watch"
-      width="335"
-    />
+    <div class="img-watch">
+      <picture>
+        <source
+          srcset="
+            ./img/Rectangle-desk@1x.jpg 1x,
+            ./img/Rectangle-desk@2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./img/Rectangle-tab@1x.jpg 1x, ./img/Rectangle-tab@2x.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./img/Rectangle-mob@1x.jpg 1x, ./img/Rectangle-mob@2x.jpg 2x"
+          media="(max-width: 767px)"
+        />
+        <img src="./img/Rectangle-tab@1x.jpg" alt="watch" />
+      </picture>
+    </div>
   </div>
 </section>

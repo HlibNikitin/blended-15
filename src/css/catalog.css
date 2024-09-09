@@ -4,6 +4,7 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 40px;
+  padding-top: 30px;
 }
 
 .container-all {
@@ -118,6 +119,9 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .catalog {
+    padding-top: 40px;
+  }
   .catalog-list,
   .catalog-main-list-second {
     display: flex;
@@ -184,6 +188,10 @@
 }
 
 @media only screen and (min-width: 1280px) {
+.catalog {
+  padding-top: 50px;
+}
+  
   .catalog-list {
     display: flex;
     flex-wrap: wrap;

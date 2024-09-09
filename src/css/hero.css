@@ -1,5 +1,5 @@
 .hero {
-  padding: 60px 0 60px;
+  padding: 60px 0 30px;
   color: #fbfbfb;
 }
 .main-text {
@@ -70,7 +70,7 @@
     max-width: 557px;
   }
   .hero {
-    padding: 80px 32px 80px;
+    padding: 80px 32px 40px;
   }
   .main-text {
     font-size: 70px;
@@ -102,7 +102,7 @@
 }
 @media only screen and (min-width: 1280px) {
   .hero {
-    padding: 80px 65px 100px;
+    padding: 80px 65px 50px;
   }
   .text-container {
     max-width: 597px;

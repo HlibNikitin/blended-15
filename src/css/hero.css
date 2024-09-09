@@ -81,8 +81,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0 11px;
-    padding: 0;
-  }
+     }
+  
   .text {
     max-width: 480px;
     font-size: 16px;

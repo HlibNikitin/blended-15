@@ -230,6 +230,23 @@
     width: 428px;
     height: 558px;
     padding: 80px 50px;
+    margin: 0;
+  }
+
+  .container-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .left-panel {
+    width: 580px;
+  }
+
+  .left-panel .right-panel {
+    display: flex;
   }
 
   .main-image-list-item {

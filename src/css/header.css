@@ -2,7 +2,6 @@
 
 .section-header {
   padding: 20px 0;
-  background-color: #fbfbfb;
   border-bottom: 1px solid #f3f3f3;
 }
 
@@ -48,10 +47,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .section-header {
-    background-color: #f3f3f3;
-  }
-
   .header-logo {
     padding: 6px 0;
   }

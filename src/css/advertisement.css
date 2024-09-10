@@ -79,9 +79,8 @@
 
 @media only screen and (min-width: 768px) {
   .advertisement-container {
-    max-width: 704px;
-    height: 425px;
     background-image: url('/img/pathtoimage2x.png');
+    padding: 80px 64px;
   }
 
   .advertisement {
@@ -90,18 +89,11 @@
   }
 
   .text-advertisement {
-    padding-left: 64px;
-    padding-right: 64px;
-    padding-top: 80px;
-    padding-bottom: 32px;
     line-height: 0.92;
     font-size: 48px;
+    margin-bottom: 32px;
   }
-
-  .button-advertisement {
-    margin-left: 64px;
   }
-}
 
 /*end tablet styles*/
 
@@ -110,9 +102,9 @@
 @media only screen and (min-width: 1280px) {
   .advertisement-container {
     max-width: 1150px;
-    height: 298px;
     display: flex;
-  }
+    padding: 83px 80px;
+    }
 
   .advertisement {
     padding-top: 100px;
@@ -121,17 +113,11 @@
 
   .text-advertisement.story-advertisement {
     display: flex;
-    padding-left: 80px;
-    padding-top: 83px;
-    padding-bottom: 83px;
-  }
+    }
 
   .button-advertisement {
     display: block;
-    padding-left: 44px;
-    padding-right: 43px;
-    margin-right: 80px;
-    margin-top: 80px;
+    margin-left: auto;
     min-width: 160px;
   }
 }

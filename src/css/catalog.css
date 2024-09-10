@@ -1,17 +1,5 @@
 .catalog {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 40px;
   padding-top: 30px;
-}
-
-.container-all {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
 }
 
 .title-catalog {
@@ -27,47 +15,24 @@
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
   gap: 20px;
-  column-gap: 0;
 }
 
 .catalog-main-list {
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
   background: #f3f3f3;
-  min-width: 280px;
-  max-width: 100%;
-}
-
-.container-clock {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 10px;
+  width: 100%;
   padding: 24px 28px;
 }
 
 .contaiter-foto {
-  height: 226px;
-  margin: auto;
   padding: 18px 36px;
-}
-
-.contaiter-foto picture {
-  mix-blend-mode: multiply;
-  margin: auto;
+  margin-bottom: 10px;
 }
 
 .info-clock {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  /*   width: 279px; */
+  width: 100%;
 }
 
 .name-clocks {
@@ -79,11 +44,13 @@
   color: #0c0c0c;
   margin-bottom: 8px;
 }
+
 .text-catalog {
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 100%;
   display: block;
+  overflow: hidden;
 }
 
 .price-clock {
@@ -93,15 +60,6 @@
   line-height: 1.28571;
   letter-spacing: -0.02em;
   color: rgba(12, 12, 12, 0.5);
-  margin: 0;
-}
-
-.catalog-main-list-second {
-  display: none;
-}
-.catalog-btn:hover,
-.catalog-btn:focus {
-  background: #1f3cd4;
 }
 
 .catalog-btn {
@@ -121,72 +79,48 @@
   margin: 40px auto 0;
 }
 
+.catalog-btn:hover,
+.catalog-btn:focus {
+  background: #1f3cd4;
+}
+
+@media only screen and (max-width: 767px) {
+  .catalog-main-list-second {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .catalog {
     padding-top: 40px;
-  }
-  .catalog-list,
-  .catalog-main-list-second {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 16px;
-    row-gap: 32px;
-  }
-
-  .container-clock {
-    display: flex;
   }
 
   .title-catalog {
     margin-bottom: 40px;
   }
 
-  .catalog-main-list,
-  .catalog-main-list-second {
-    flex-basis: calc((100% - 1 * 16px) / 2);
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 16px;
+  }
+
+  .catalog-main-list {
+    width: calc((100% - 16px) / 2);
+    padding: 24px 32px;
   }
 
   .contaiter-foto {
-    height: auto;
-    margin: auto;
-    padding: 0;
-  }
-
-  .foto-clock {
-    width: 280px;
-    mix-blend-mode: multiply;
-    margin: auto;
+    padding: 10px 6px;
+    margin-bottom: 20px;
   }
 
   .catalog-btn {
     display: none;
   }
 
-  .catalog-main-list-second {
-    border: 1px solid rgba(12, 12, 12, 0.05);
-    border-radius: 30px;
-    background: #f3f3f3;
-  }
-
-  .text-catalog {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    max-width: 100%;
-    display: block;
-    overflow: hidden;
-  }
-
   .name-clocks {
-    font-family: 'Gilroy', sans-serif;
-    font-weight: 500;
     font-size: 20px;
-    line-height: 1.25;
-    letter-spacing: -0.02em;
-    color: #0c0c0c;
-    margin-bottom: 8px;
   }
 }
 
@@ -198,47 +132,10 @@
   .catalog-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 23px;
-    row-gap: 32px;
-  }
-
-  .catalog-btn {
-    display: none;
-  }
-
-  .contaiter-foto {
-    height: auto;
-    margin: auto;
-    padding: 0;
+    gap: 32px 23px;
   }
 
   .catalog-main-list {
-    flex-basis: calc((100% - 2 * 23px) / 3);
-  }
-
-  .catalog-main-list-second {
-    border: 1px solid rgba(12, 12, 12, 0.05);
-    border-radius: 30px;
-    background: #f3f3f3;
-    flex-basis: calc((100% - 2 * 23px) / 3);
-  }
-  .text-catalog {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    max-width: 100%;
-    display: block;
-    overflow: hidden;
-  }
-
-  .container-clock {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 10px;
-    padding: 24px 32px;
+    width: calc((100% - 46px) / 3);
   }
 }

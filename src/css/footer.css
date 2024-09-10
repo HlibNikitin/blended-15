@@ -12,6 +12,7 @@ a {
   border-radius: 30px;
   padding: 40px 28px 28px 28px;
   background-color: #0c0c0c;
+  min-width: 280px;
   max-width: 335px;
 }
 

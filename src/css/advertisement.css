@@ -113,9 +113,12 @@
 
   .text-advertisement.story-advertisement {
     display: flex;
-    margin-bottom: 0;
     }
 
+.text-advertisement {
+    margin-bottom: 0;
+}
+  
   .button-advertisement {
     display: block;
     margin-left: auto;

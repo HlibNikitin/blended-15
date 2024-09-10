@@ -147,6 +147,10 @@
     margin-bottom: 40px;
   }
 
+  .main-image-container {
+    margin-bottom: 40px;
+  }
+
   .thumbnails {
     display: flex;
   }

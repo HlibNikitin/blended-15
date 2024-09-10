@@ -268,4 +268,7 @@
   .description {
     min-width: 410px;
   }
+
+  .tags {
+    width: 398px;
 }

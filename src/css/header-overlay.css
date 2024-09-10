@@ -1,7 +1,8 @@
 .modal-overlay {
   position: fixed;
-  top: 0;
-  right: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   min-height: 100%;
   opacity: 0;
@@ -17,9 +18,8 @@
   position: absolute;
   width: 200px;
   height: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

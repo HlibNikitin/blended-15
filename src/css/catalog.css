@@ -56,7 +56,8 @@
   margin: auto;
   padding: 18px 36px;
 }
-.foto-clock {
+
+.contaiter-foto picture {
   mix-blend-mode: multiply;
   margin: auto;
 }
@@ -66,7 +67,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-/*   width: 279px; */
+  /*   width: 279px; */
 }
 
 .name-clocks {
@@ -190,10 +191,10 @@
 }
 
 @media only screen and (min-width: 1280px) {
-.catalog {
-  padding-top: 50px;
-}
-  
+  .catalog {
+    padding-top: 50px;
+  }
+
   .catalog-list {
     display: flex;
     flex-wrap: wrap;

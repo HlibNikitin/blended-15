@@ -147,10 +147,6 @@
     margin-bottom: 40px;
   }
 
-  .main-image-container {
-    margin-bottom: 40px;
-  }
-
   .thumbnails {
     display: flex;
   }
@@ -174,6 +170,7 @@
     flex-wrap: wrap;
     gap: 20px;
     row-gap: 40px;
+    margin-bottom: 40px;
   }
 
   .right-panel {

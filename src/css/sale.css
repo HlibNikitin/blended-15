@@ -248,6 +248,10 @@
     display: flex;
   }
 
+  .main-image-list {
+    margin-bottom: 0;
+  }
+
   .main-image-list-item {
     border: 1px solid rgba(12, 12, 12, 0.05);
     border-radius: 20px;

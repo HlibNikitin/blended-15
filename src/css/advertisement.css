@@ -17,6 +17,7 @@
   background-size: cover;
   background-position: center;
   padding: 60px 28px;
+  width: 335px;
 }
 
 .invisible-advertisement {
@@ -81,6 +82,7 @@
   .advertisement-container {
     background-image: url('/img/pathtoimage2x.png');
     padding: 80px 64px;
+    width: 704px;
   }
 
   .advertisement {
@@ -101,7 +103,7 @@
 
 @media only screen and (min-width: 1280px) {
   .advertisement-container {
-    max-width: 1150px;
+    width: 1150px;
     display: flex;
     padding: 83px 80px;
     }
